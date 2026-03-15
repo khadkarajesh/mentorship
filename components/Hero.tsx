@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -9,11 +10,32 @@ export default function Hero() {
         available for mentorship sessions
       </div>
 
-      <h1 className="text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-6 text-white">
-        After 100+ rejections, I still made it
-        <br />
-        <span className="text-emerald-400">to a top-10 tech company.</span>
-      </h1>
+      {/* Photo + headline row */}
+      <div className="flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-8 mb-6">
+        <h1 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight text-white">
+          After 100+ rejections, I still made it
+          <br />
+          <span className="text-emerald-400">to a top-10 tech company.</span>
+        </h1>
+
+        <div className="flex-shrink-0">
+          <div className="relative w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-2 border-emerald-400/40 ring-4 ring-emerald-400/10">
+            <Image
+              src="/rajesh.jpeg"
+              alt="Rajesh Khadka — Senior Software Engineer at Synopsys"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+          <p className="text-xs font-mono text-gray-500 mt-2 text-center">
+            Rajesh Khadka
+          </p>
+          <p className="text-xs font-mono text-emerald-400/70 text-center">
+            Senior SWE @ Synopsys
+          </p>
+        </div>
+      </div>
 
       <p className="text-lg md:text-xl text-gray-400 max-w-2xl mb-4 leading-relaxed">
         You know the feeling. One rejection and the spiral starts —
