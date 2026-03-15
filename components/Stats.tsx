@@ -2,7 +2,7 @@ const stats = [
   { value: "12+", label: "Years of experience" },
   { value: "50+", label: "Engineers mentored" },
   { value: "100+", label: "Free sessions given" },
-  { value: "Top 10", label: "Tech company globally" },
+  { value: "Top 10", label: "Synopsys · global tech" },
 ];
 
 export default function Stats() {

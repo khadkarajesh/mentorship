@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center px-6 py-24 max-w-4xl mx-auto">
+    <section className="min-h-[88vh] flex flex-col justify-center px-6 py-24 max-w-4xl mx-auto">
       {/* Status badge */}
       <div className="mb-8 inline-flex items-center gap-2 text-sm font-mono text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 rounded px-3 py-1.5 w-fit">
         <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />

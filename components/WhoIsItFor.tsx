@@ -66,15 +66,9 @@ export default function WhoIsItFor() {
         <p className="text-gray-300 mb-1">
           If you read the left column and felt seen —
         </p>
-        <p className="text-white font-semibold text-lg mb-6">
+        <p className="text-white font-semibold text-lg">
           that&apos;s exactly why this exists.
         </p>
-        <Link
-          href="/booking"
-          className="inline-flex items-center justify-center px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-black font-semibold rounded-lg transition-colors text-base"
-        >
-          Book your free session →
-        </Link>
       </div>
     </section>
   );
