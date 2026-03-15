@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
+import WhoIsItFor from "@/components/WhoIsItFor";
 import Services from "@/components/Services";
 import HowItWorks from "@/components/HowItWorks";
 import BlogPreview from "@/components/BlogPreview";
@@ -11,6 +12,7 @@ export default function HomePage() {
     <main>
       <Hero />
       <Stats />
+      <WhoIsItFor />
       <Services />
       <HowItWorks />
       <BlogPreview />
