@@ -4,18 +4,12 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="min-h-[88vh] flex flex-col justify-center px-6 py-24 max-w-4xl mx-auto">
-      {/* Status badge */}
-      <div className="mb-8 inline-flex items-center gap-2 text-sm font-mono text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 rounded px-3 py-1.5 w-fit">
-        <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-        available for mentorship sessions
-      </div>
-
-      {/* Photo + headline row */}
+{/* Photo + headline row */}
       <div className="flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-8 mb-6">
         <h1 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight text-white">
-          After 100+ rejections, I still made it
+          100 rejections. No Ivy League.
           <br />
-          <span className="text-emerald-400">to a top-10 tech company.</span>
+          <span className="text-emerald-400">Now at Synopsys.</span>
         </h1>
 
         <div className="flex-shrink-0">
