@@ -54,11 +54,9 @@ export default function Hero() {
       </p>
 
       <p className="text-lg md:text-xl text-gray-300 max-w-2xl mb-10 leading-relaxed">
-        You don&apos;t have to take the road I took. I&apos;ll study your learning
-        pattern, understand what breaks you, and build a personalized plan
-        that starts showing results. No AI-generated advice. No generic
-        roadmaps. Just 12 years of hard-earned experience from someone who
-        has been exactly where you are.
+        You don&apos;t have to take the road I took. I&apos;ll cut through what&apos;s
+        actually blocking you — with 12 years of hard-earned experience from
+        someone who has been exactly where you are.
       </p>
 
       {/* USP block */}

@@ -5,6 +5,9 @@ const testimonials = [
     name: "Neha Pandey",
     role: "Senior Software Engineer, Global Staffing Support",
     linkedin: "https://www.linkedin.com/in/neha-pandey-dev/",
+    initial: "N",
+    color: "bg-blue-500/20 text-blue-400",
+    featured: true,
   },
   {
     quote:
@@ -12,6 +15,9 @@ const testimonials = [
     name: "Pratik Manandhar",
     role: "Masters Student, Germany",
     linkedin: "https://www.linkedin.com/in/pratik-manandhar/",
+    initial: "P",
+    color: "bg-purple-500/20 text-purple-400",
+    featured: false,
   },
   {
     quote:
@@ -19,6 +25,9 @@ const testimonials = [
     name: "Suraj Gautam",
     role: "Sr. Software Engineer, American Airlines",
     linkedin: "https://www.linkedin.com/in/gautamsuraj/",
+    initial: "S",
+    color: "bg-orange-500/20 text-orange-400",
+    featured: false,
   },
   {
     quote:
@@ -26,10 +35,16 @@ const testimonials = [
     name: "Aliz Acharya",
     role: "Software Engineer, Jeeves",
     linkedin: "https://www.linkedin.com/in/aliz-acharya/",
+    initial: "A",
+    color: "bg-teal-500/20 text-teal-400",
+    featured: false,
   },
 ];
 
 export default function Testimonials() {
+  const featured = testimonials.find((t) => t.featured);
+  const rest = testimonials.filter((t) => !t.featured);
+
   return (
     <section className="px-6 py-24 max-w-4xl mx-auto">
       <div className="mb-12">
@@ -43,40 +58,61 @@ export default function Testimonials() {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-        {testimonials.map((t) => (
-          <div
-            key={t.name}
-            className="border border-gray-800 bg-gray-900/40 rounded-xl p-6 flex flex-col justify-between gap-6"
-          >
-            <p className="text-gray-300 leading-relaxed text-sm">
-              &ldquo;{t.quote}&rdquo;
+      <div className="flex flex-col gap-5">
+        {/* Featured testimonial — full width */}
+        {featured && (
+          <div className="border border-emerald-400/20 bg-emerald-400/5 rounded-xl p-8">
+            <p className="text-gray-200 leading-relaxed text-base md:text-lg mb-6">
+              &ldquo;{featured.quote}&rdquo;
             </p>
-
             <a
-              href={t.linkedin}
+              href={featured.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 group w-fit"
             >
-              <div className="w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center flex-shrink-0">
-                <svg
-                  className="w-3.5 h-3.5 text-gray-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                </svg>
+              <div className={`w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0 font-semibold text-sm ${featured.color}`}>
+                {featured.initial}
               </div>
               <div>
                 <p className="text-white text-sm font-medium group-hover:text-emerald-400 transition-colors">
-                  {t.name}
+                  {featured.name}
                 </p>
-                <p className="text-gray-500 text-xs">{t.role}</p>
+                <p className="text-gray-500 text-xs">{featured.role}</p>
               </div>
             </a>
           </div>
-        ))}
+        )}
+
+        {/* Remaining testimonials — 3-column grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {rest.map((t) => (
+            <div
+              key={t.name}
+              className="border border-gray-800 bg-gray-900/40 rounded-xl p-6 flex flex-col justify-between gap-6"
+            >
+              <p className="text-gray-300 leading-relaxed text-sm">
+                &ldquo;{t.quote}&rdquo;
+              </p>
+              <a
+                href={t.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 group w-fit"
+              >
+                <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-semibold text-xs ${t.color}`}>
+                  {t.initial}
+                </div>
+                <div>
+                  <p className="text-white text-sm font-medium group-hover:text-emerald-400 transition-colors">
+                    {t.name}
+                  </p>
+                  <p className="text-gray-500 text-xs">{t.role}</p>
+                </div>
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

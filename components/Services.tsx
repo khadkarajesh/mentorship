@@ -74,21 +74,12 @@ export default function Services() {
         ))}
       </div>
 
-      {/* Footer CTA */}
-      <div className="mt-16 border border-gray-800 rounded-xl p-8 text-center bg-gray-900/20">
-        <p className="text-gray-400 mb-2 text-base">
-          Not sure which area to start with?
-        </p>
-        <p className="text-white text-lg font-semibold mb-6">
-          That&apos;s what the first session is for.
-        </p>
-        <Link
-          href="/booking"
-          className="inline-flex items-center justify-center px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-black font-semibold rounded-lg transition-colors text-base"
-        >
-          Book your free session →
+      <p className="mt-10 text-center text-gray-500 text-sm">
+        Not sure which area to start with?{" "}
+        <Link href="/booking" className="text-emerald-400 hover:text-emerald-300 transition-colors">
+          That&apos;s what the first session is for →
         </Link>
-      </div>
+      </p>
     </section>
   );
 }

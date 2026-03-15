@@ -77,14 +77,6 @@ export default function HowItWorks() {
         </p>
       </div>
 
-      <div className="mt-10 text-center">
-        <Link
-          href="/booking"
-          className="inline-flex items-center justify-center px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-black font-semibold rounded-lg transition-colors text-base"
-        >
-          Book your free session →
-        </Link>
-      </div>
     </section>
   );
 }

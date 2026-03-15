@@ -55,7 +55,7 @@ export default function FAQ() {
           >
             <summary className="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none text-white font-medium select-none">
               <span>{faq.q}</span>
-              <span className="flex-shrink-0 font-mono text-emerald-400 text-lg transition-transform group-open:rotate-45">
+              <span className="flex-shrink-0 font-mono text-emerald-400 text-lg transition-transform duration-200 group-open:rotate-45">
                 +
               </span>
             </summary>

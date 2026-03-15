@@ -6,6 +6,7 @@ import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
 import BlogPreview from "@/components/BlogPreview";
 import FAQ from "@/components/FAQ";
+import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 
 export default function HomePage() {
@@ -19,6 +20,7 @@ export default function HomePage() {
       <Testimonials />
       <BlogPreview />
       <FAQ />
+      <FinalCTA />
       <Footer />
     </main>
   );

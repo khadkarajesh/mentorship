@@ -49,6 +49,11 @@ export default function BookingPage() {
         </div>
       </div>
 
+      {/* Micro-copy */}
+      <p className="mb-8 font-mono text-xs text-gray-600">
+        {"// I read every booking form personally before we meet."}
+      </p>
+
       {/* Cal.com embed */}
       <div
         id="cal-booking-embed"
