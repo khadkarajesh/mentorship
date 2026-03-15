@@ -32,25 +32,27 @@ export default function Hero() {
       </div>
 
       <p className="text-lg md:text-xl text-gray-400 max-w-2xl mb-4 leading-relaxed">
-        You know the feeling. One rejection and the spiral starts —
+        You know that feeling. One rejection and the spiral starts —
         <span className="text-gray-300 italic"> &quot;I&apos;m not smart enough. I chose the wrong profession. I can&apos;t do this.&quot;</span>{" "}
-        That label sticks. You stop seeing what you actually did well. I lived
-        that loop. Over 100 times. Not Ivy League. Not elite. Just someone
-        grinding alone in the dark, skipping weekends, missing family
-        functions — with no one pointing the right direction.
+        The label sticks. You stop seeing what you did well. You only feel
+        the weight of what you didn&apos;t. I lived that loop — alone, with no
+        one to interrupt the narrative.
       </p>
 
       <p className="text-lg md:text-xl text-gray-300 max-w-2xl mb-4 leading-relaxed">
-        I broke through. I&apos;m now a Senior Software Engineer at Synopsys —
-        one of the top 10 tech companies in the world. Over 12 years, I&apos;ve
-        mentored 50+ engineers directly and run 100+ free sessions, including
-        people who were days away from quitting tech entirely.
+        Most mentors teach from the summit. I learned on the climb. I worked
+        with engineers at outsourcing firms, colleges, and bootcamps in Nepal
+        long before Synopsys. Then moved to Paris and spent months in the same
+        rejection spiral I&apos;m describing. I&apos;ve seen every version of stuck —
+        the fresh graduate paralyzed by rejection, the mid-level engineer
+        invisible to management, the outsourcing developer nobody believes in.
+        That&apos;s not a backstory. That&apos;s why when you tell me what&apos;s happening,
+        I already know what&apos;s actually happening — and what to do next.
       </p>
 
       <p className="text-lg md:text-xl text-gray-300 max-w-2xl mb-10 leading-relaxed">
-        You don&apos;t have to take the road I took. I&apos;ll cut through what&apos;s
-        actually blocking you — with 12 years of hard-earned experience from
-        someone who has been exactly where you are.
+        Every single time, the real problem wasn&apos;t what they thought it was.
+        I&apos;ll find yours. And I&apos;ll help you move past it.
       </p>
 
       {/* USP block */}
