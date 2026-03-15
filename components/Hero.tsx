@@ -10,21 +10,33 @@ export default function Hero() {
       </div>
 
       <h1 className="text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-6 text-white">
-        Stop guessing your
+        After 100+ rejections, I still made it
         <br />
-        <span className="text-emerald-400">career moves.</span>
+        <span className="text-emerald-400">to a top-10 tech company.</span>
       </h1>
 
       <p className="text-lg md:text-xl text-gray-400 max-w-2xl mb-4 leading-relaxed">
-        I&apos;m a software engineer based in Europe, originally from Nepal. I work
-        with western teams daily — I know exactly what separates engineers who
-        grow from those who stay stuck.
+        You know the feeling. One rejection and the spiral starts —
+        <span className="text-gray-300 italic"> &quot;I&apos;m not smart enough. I chose the wrong profession. I can&apos;t do this.&quot;</span>{" "}
+        That label sticks. You stop seeing what you actually did well. I lived
+        that loop. Over 100 times. Not Ivy League. Not elite. Just someone
+        grinding alone in the dark, skipping weekends, missing family
+        functions — with no one pointing the right direction.
+      </p>
+
+      <p className="text-lg md:text-xl text-gray-300 max-w-2xl mb-4 leading-relaxed">
+        I broke through. I&apos;m now a Senior Software Engineer at Synopsys —
+        one of the top 10 tech companies in the world. Over 12 years, I&apos;ve
+        mentored 50+ engineers directly and run 100+ free sessions, including
+        people who were days away from quitting tech entirely.
       </p>
 
       <p className="text-lg md:text-xl text-gray-300 max-w-2xl mb-10 leading-relaxed">
-        Whether you&apos;re grinding at an outsourcing firm, chasing your first job,
-        or sick of yearly reviews that are just excuses to not raise your
-        salary — I&apos;ve seen this pattern. Let&apos;s break it.
+        You don&apos;t have to take the road I took. I&apos;ll study your learning
+        pattern, understand what breaks you, and build a personalized plan
+        that starts showing results. No AI-generated advice. No generic
+        roadmaps. Just 12 years of hard-earned experience from someone who
+        has been exactly where you are.
       </p>
 
       {/* USP block */}
