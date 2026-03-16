@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Mentorship for Nepali Engineers | Rajesh Khadka",
+  title: "Rajesh Khadka — Pay-on-Success Engineering Mentor",
   description:
     "Pay-on-Success mentorship for Nepali software engineers. System design, interview prep, communication with western clients, and career growth — from an engineer based in Europe.",
   keywords: [
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "reflectivedev mentorship",
   ],
   openGraph: {
-    title: "Mentorship for Nepali Engineers | Rajesh Khadka",
+    title: "Rajesh Khadka — Pay-on-Success Engineering Mentor",
     description:
       "You only pay after landing a better job or a significant hike. First session is free.",
     url: "https://mentorship.reflectivedev.com",
