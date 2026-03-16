@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Rajesh Khadka | Pay-on-Success Engineering Mentorship",
     description:
-      "You only pay after landing a better job or a significant hike. First session is completely free — no credit card, no commitment, no pitch. 50+ engineers mentored.",
+      "You only pay after landing a better job or a significant hike. First session is free — no credit card, no commitment, no pitch. 50+ engineers mentored.",
     url: "https://mentorship.reflectivedev.com",
     siteName: "Reflective Dev Mentorship",
     type: "website",
