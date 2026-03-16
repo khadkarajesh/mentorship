@@ -3,9 +3,9 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Rajesh Khadka — Pay-on-Success Engineering Mentor",
+  title: "Rajesh Khadka | Pay-on-Success Engineering Mentorship",
   description:
-    "Pay-on-Success mentorship for Nepali software engineers. System design, interview prep, communication with western clients, and career growth — from an engineer based in Europe.",
+    "Pay-on-Success mentorship for Nepali software engineers. System design, interview prep, communication with western clients, and career growth — from a Senior Engineer at Synopsys based in Europe.",
   keywords: [
     "Nepal software engineer mentorship",
     "system design nepal",
@@ -14,20 +14,12 @@ export const metadata: Metadata = {
     "reflectivedev mentorship",
   ],
   openGraph: {
-    title: "Rajesh Khadka — Pay-on-Success Engineering Mentor",
+    title: "Rajesh Khadka | Pay-on-Success Engineering Mentorship",
     description:
-      "You only pay after landing a better job or a significant hike. First session is free.",
+      "You only pay after landing a better job or a significant hike. First session is completely free — no credit card, no commitment, no pitch. 50+ engineers mentored.",
     url: "https://mentorship.reflectivedev.com",
     siteName: "Reflective Dev Mentorship",
     type: "website",
-    images: [
-      {
-        url: "https://mentorship.reflectivedev.com/rajesh.jpeg",
-        width: 800,
-        height: 800,
-        alt: "Rajesh Khadka — Pay-on-Success Engineering Mentor",
-      },
-    ],
   },
 };
 
