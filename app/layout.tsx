@@ -1,18 +1,15 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Rajesh Khadka | Pay-on-Success Engineering Mentorship",
   description:
     "Pay-on-Success mentorship for Nepali software engineers. System design, interview prep, communication with western clients, and career growth — from a Senior Engineer at Synopsys based in Europe.",
-  keywords: [
-    "Nepal software engineer mentorship",
-    "system design nepal",
-    "software engineer career nepal",
-    "coding interview prep nepal",
-    "reflectivedev mentorship",
-  ],
+  alternates: {
+    canonical: "https://mentorship.reflectivedev.com",
+  },
   openGraph: {
     title: "Rajesh Khadka | Pay-on-Success Engineering Mentorship",
     description:
@@ -23,6 +20,31 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Rajesh Khadka",
+  jobTitle: "Senior Software Engineer",
+  worksFor: {
+    "@type": "Organization",
+    name: "Synopsys",
+  },
+  url: "https://mentorship.reflectivedev.com",
+  sameAs: [
+    "https://www.linkedin.com/in/rajeshkhadka/",
+    "https://reflectivedev.com/",
+  ],
+  description:
+    "Pay-on-Success engineering mentor for Nepali software developers. 12+ years experience, 50+ engineers mentored.",
+  knowsAbout: [
+    "System Design",
+    "Software Engineering",
+    "Career Growth",
+    "Interview Preparation",
+    "Western Client Communication",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -30,9 +52,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="antialiased">
         <Navbar />
         {children}
+        <Analytics />
       </body>
     </html>
   );
