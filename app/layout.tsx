@@ -20,6 +20,14 @@ export const metadata: Metadata = {
     url: "https://mentorship.reflectivedev.com",
     siteName: "Reflective Dev Mentorship",
     type: "website",
+    images: [
+      {
+        url: "https://mentorship.reflectivedev.com/rajesh.jpeg",
+        width: 800,
+        height: 800,
+        alt: "Rajesh Khadka — Pay-on-Success Engineering Mentor",
+      },
+    ],
   },
 };
 
